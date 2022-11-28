@@ -1,0 +1,10 @@
+@import url(/Styling/Common/colors.css);
+
+.header{
+    background-color: var(--white);
+    box-shadow: 0px 1px 10px rgb(39, 39, 39);
+    
+    height: 6rem;
+    width: 100%;
+    position: sticky;
+}
