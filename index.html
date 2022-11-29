@@ -5,35 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styling/indexStyle.css">
+    <script src="toggle-element.js" defer></script>
     <title>Local Museum | Home</title>
 </head>
 <body>
     <header class="header">
-
+        <a href=""><img class="logoImage" src="/images/Meuseum-logo-transparent.png" alt="Museum Logo"></a>
+        <div></div>
+        <div class="hamburger-menu-container">
+            <input type="checkbox" class="hamburgerToggle" id="js-toggle-button">
+            <label  for="js-toggle-button"><img class="hamburgerButton" src="/Icons/hamburger.png" alt="hamburgerMenuButton"></label>
+            <section id="js-menu" class="menu">
+                This content shows and hides when the button is clicked
+            </section>
+        </div>
     </header>
     <main class="main">
+        <section>
+            <div class="page-description-container">
+                <h2>Exhibition Spaces</h2>
+                <p>Find out more about our Exhibition Spaces. </p>
+            </div>
+        </section>
         <div class="exibition-spaces-nav-container">
             <!-- <div class="item1"></div> -->
-            <div class="exibit-container-grpd biology-medicin-container">
-                <a href=""><div class="exibit-buttons-grpd "></div></a>
+            <div class="exibit-container-grpd ">
+                <a href=""><div class="exibit-buttons-grpd biology-medicin-container"></div></a>
                 <p>Biology & Medicine</p>
             </div>
-            <div class="exibit-container-grpd cosmology-container">
-                <a href=""><div class="exibit-buttons-grpd "></div></a>
+            <div class="exibit-container-grpd ">
+                <a href=""><div class="exibit-buttons-grpd cosmology-container"></div></a>
                 <p>Cosmology</p>
             </div>
-            <div class="exibit-container-grpd evolution-containe">
-                <a href=""><div class="exibit-buttons-grpd "></div></a>
+            <div class="exibit-container-grpd ">
+                <a href=""><div class="exibit-buttons-grpd evolution-containe"></div></a>
                 <p>Evolution</p>
             </div>
-            <div class="exibit-container-grpd robot-ai-container">
-                <a href=""><div class="exibit-buttons-grpd "></div></a>
+            <div class="exibit-container-grpd ">
+                <a href=""><div class="exibit-buttons-grpd robot-ai-container"></div></a>
                 <p>Robotics & A.I.</p>
             </div>
-            <div class="exibit-container-grpd ecology-container">
-                <a href=""><div class="exibit-buttons-grpd "></div></a>
+            <div class="exibit-container-grpd ">
+                <a href=""><div class="exibit-buttons-grpd ecology-container"></div></a>
                 <p>Ecology</p>
-            </div>
+        
         </div>
     </main>
 
