@@ -1,0 +1,29 @@
+.menu {
+    z-index: 100;
+    position: fixed;
+    top: 96px;
+    left: 30vw;
+    
+    background-color: var(--orange-light);
+    
+    width: 70vw;
+    height: 300px;
+
+    border-radius: 0 25px 0px 0;
+    display: none;
+  }
+
+  .is-visible {
+    display: flex;
+  }
+
+  .hamburgerToggle{
+    display: none;
+  }
+
+
+  .hamburgerButton{
+    max-width: 50px;
+    padding-right: 20px;
+  }
+

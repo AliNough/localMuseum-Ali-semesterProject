@@ -4,14 +4,21 @@
     display: grid;
     grid-template-columns: 96px auto 70px;
     align-items: center;
+
+
+
     /* background-color: var(--white); */
-    background-color: rgb(176, 229, 229);
+    background-color: var(--orange-root);
     box-shadow: 0px 1px 10px rgb(39, 39, 39);
 
     height: 6rem;
     width: 100vw;
+
     position: sticky;
     top: 0px;
+    z-index: 100;
+
+  border-radius: 0px 0px 25px 25px;
 }
 
 .logoImage{
@@ -25,26 +32,3 @@
 }
 
 
-.menu {
-    display: none;
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-    width: 70vw;
-    top: 96px;
-    left: 30vw;
-  }
-  
-  
-  .is-visible {
-    display: flex;
-  }
-
-  .hamburgerToggle{
-    display: none;
-  }
-
-
-  .hamburgerButton{
-    max-width: 50px;
-    padding-right: 20px;
-  }

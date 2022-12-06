@@ -3,10 +3,94 @@
 .footer{
     /* background-color: var(--white); */
     /* box-shadow: 0px -1px 10px rgb(39, 39, 39); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
     background-color: var(--black);
     
-    height: 4rem;
+    height: 10rem;
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 91%;
+
+    overflow-x: hidden;
+}
+
+.GTT-button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: var(--white);
+    
+}
+.GTT-arrow{
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+}
+
+.go-to-top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.buttom-content-main{
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 0px;
+    /* background-color: aqua; */
+    height: 20vh;
+    width: 100vw;
+}
+.buttom-content-y{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.buttom-content-x{
+    display: flex;
+    width: 100vw;
+}
+
+.buttom-content-GRP{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    
+    
+    text-decoration: none;
+    color: var(--white);
+    /* border: 1px solid var(--white-Opp); */
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.footer-button-1{
+    font-size: 1.2rem;
+    background-color: var(--orange-root);
+    width: 70vw;
+    height: 48px;    
+    border-radius: 30px;
+    
+}
+.footer-button-2{
+    
+}
+.footer-button-3{
+    
+}
+.footer-button-4{
+
 }

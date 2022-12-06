@@ -1,4 +1,5 @@
-@import url(/Styling/Common/colors.css);
+@import url(/Styling/Common/variables.css);
 @import url(/Styling/Common/header.css);
 @import url(/Styling/Common/footer.css);
 @import url(/Styling/Common/body.css);
+@import url(/Styling/Common/hamburgerMenuStyling.css);
