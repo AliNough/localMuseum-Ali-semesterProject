@@ -1,0 +1,127 @@
+@import url(/Styling/Common/assembled.css);
+/* @import url(/Styling/exhibitSpaceMainPageStyling.css); */
+
+
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.page-description-section{
+    display: flex;
+    align-items: center;
+    
+    color: var(--white);
+}
+
+.page-description-container{
+    margin: 0px 20px;
+}
+.page-description-container h3{
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+.page-description-container h2{
+    margin-top: 5px;
+}
+
+.backButton-input{
+    display: none;
+}
+
+.backButton{
+    max-width: 50px;
+    max-height: 50px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+
+/* exhibition spaces nav section start */
+.exibition-spaces-nav-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    width: 100%;
+    justify-content: center;
+    column-gap: 20px;
+    
+    padding-top: 20px;
+}
+.exibit-container-grpd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.exibit-buttons-grpd{
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    
+    z-index: 10;
+    height: 90px;
+    width: 90px;
+    background-color: rgb(71, 202, 202);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.exibit-buttons-grpd:hover{
+    position: relative;
+    z-index: 600;
+    transform: scale(1.25);
+    box-shadow: inset 0px 0px 25px 0px black;
+}
+
+
+
+.exibit-container-grpd p{
+    display: flex;
+    padding: 0px;
+    margin-top: 10px;
+    font-size: .8rem;
+    flex-wrap: wrap;
+}
+/* exhibition spaces nav section END */
+
+
+.exhibit-spaces-grp-1 , .exhibit-spaces-grp-2, .exhibit-spaces-grp-3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.exhibit-spaces-grp-2{
+    position: relative;
+    bottom: 49px;
+}
+
+.exhibit-spaces-grp-3{
+    position: relative;
+    bottom: 98px;
+}
+
+.grp-A{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    right: 75px;
+
+}
+.grp-B{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 93px;
+    bottom: 24px;
+    min-width: 100%;
+    /* justify-content: center; */
+}

@@ -29,6 +29,7 @@
     width: 50px;
     height: 50px;
     filter: invert(100%);
+    transform:translateY(15px)
 }
 
 .go-to-top-container{
@@ -78,19 +79,11 @@
 }
 
 .footer-button-1{
-    font-size: 1.2rem;
+    color: var(--black);
+    font-size: 1rem;
     background-color: var(--orange-root);
-    width: 70vw;
-    height: 48px;    
+    width: 60vw;
+    height: 38px;    
     border-radius: 30px;
     
-}
-.footer-button-2{
-    
-}
-.footer-button-3{
-    
-}
-.footer-button-4{
-
 }

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styling/exhibitionSpaceStyling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styling/exhibitSpaceMainPageStyling.css">
     <script src="../toggle-element.js" defer></script>
     <title>Local Museum | Exhibition Space</title>
 </head>
@@ -16,7 +19,12 @@
             <input type="checkbox" class="hamburgerToggle" id="js-toggle-button">
             <label  for="js-toggle-button"><img class="hamburgerButton" src="/Icons/hamburger.png" alt="hamburgerMenuButton"></label>
             <section id="js-menu" class="menu">
-                This content shows and hides when the button is clicked
+                <div class="menu-container">
+                    <a href="">Get in touch</a>
+                    <a href="">Get in touch</a>
+                    <a href="">Get in touch</a>
+                    <a href="">Get in touch</a>
+                </div>
             </section>
         </div>
     </header>
@@ -25,16 +33,16 @@
             <a onclick="history.back()" href=""><img class="backButton" src="/Icons/back.png" alt="back-button"></a>
             <div class="page-description-container">
                 <h2>Exhibition Spaces</h2>
-                <p>Find out more about our Exhibition Spaces. </p>
+                <p>Explore some of our most exciting Exhibition Spaces. </p>
             </div>
         </section>
         <div class="exibition-spaces-nav-container">
             <!-- <div class="item1"></div> -->
-            <div class="exibit-container-grpd ">
+            <div class="exibit-container-grpd page-is-selected">
                 <a href="biologyMedicinePage.html"><img src="/images/samuel-zeller-113381.jpg" class="exibit-buttons-grpd biology-medicin-container" alt="a manaquin displaying the human body and its organs"></a>
                 <p>Biology & Medicine</p>
             </div>
-            <div class="exibit-container-grpd ">
+            <div class="exibit-container-grpd">
                 <a href="cosmologyPage.html"><img src="/images/andrew-ruiz-348421.jpg" class="exibit-buttons-grpd cosmology-container" alt="an astronaut in space suit"></a>
                 <p>Cosmology</p>
             </div>
@@ -50,6 +58,39 @@
                 <a href="ecologyPage.html"><img class="exibit-buttons-grpd ecology-container" src="/images/aaron-blanco-tejedor-G9p6QyCQfCc-unsplash.jpg" alt=""></img></a>
                 <p>Ecology</p>
             </div>
+        </div>
+        <div class="news-main-container">
+            <h3 class="news-heading">News!</h3>
+            <div class="news-content-container">
+                <a href="" class="news-title"><h4 >Visiting Professor of Aeronautics</h4></a>
+                <p class="news-copy">It is our pleasure to announce that Prof Sheila Widnall from the
+                    Massachusetts Institute of Technology will be delivering 3 lectures on the 
+                    development of aeronautics and where the future lies in this exciting ‘space’.
+                </p>
+            </div>
+        </div>
+        <div class="news-main-container">
+            <div class="news-content-container">
+                <a href="" class="news-title"><h4>Night in the Museum</h4></a>
+                <p class="news-copy">Get your family together for an exciting night in the museum 
+                    as you sleep over beside dinosaurs and science displays. 
+                    Bring your own sleeping bag and get ready to rough it as we go 
+                    exploring the wonders of science.
+                </p>
+            </div>
+        </div>
+        <div class="news-main-container">
+            <div class="news-content-container">
+                <a href="" class="news-title"><h4 >Energetica Exhibition on Loan</h4></a>
+                <p class="news-copy">On loan from the NEMO Science Museum in Amsterdam, 
+                    the Energetica exhibition is coming to the Community Science Museum. 
+                    It's a series of installations that allow visitors to experience 
+                    the power of the elements as we harness them. From solar energy powering lighting, 
+                    to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.
+                </p>
+            </div>
+
+        </div>
     </main>
 
     <footer class="footer">

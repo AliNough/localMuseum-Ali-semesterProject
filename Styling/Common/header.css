@@ -7,8 +7,10 @@
 
 
 
-    /* background-color: var(--white); */
-    background-color: var(--orange-root);
+    background-image: url(/images/lab-512503_1920.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-color: var(--creamy);
     box-shadow: 0px 1px 10px rgb(39, 39, 39);
 
     height: 6rem;
@@ -29,6 +31,13 @@
 .hamburger-menu-container{
   float: right;
   /* background-color: aqua; */
+}
+
+@media screen and (min-width: 600px) {
+   .hamburger-menu-container{
+    display: none;
+   }
+  
 }
 
 

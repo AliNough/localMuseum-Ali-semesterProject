@@ -1,0 +1,15 @@
+@import url(/Styling/Common/assembled.css);
+
+.test-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test-main-container-first-parent{
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 100vw;
+}
+
+

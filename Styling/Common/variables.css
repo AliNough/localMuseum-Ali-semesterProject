@@ -1,10 +1,14 @@
+
+
 :root{
+   font-family: 'Solway', sans-serif;
    /* colors */
    --black : rgb(17, 17, 17);
    --white: rgb(226, 226, 226);
    --white-Opp: rgba(226, 226, 226, 0.582);
    --orange-root: rgb(245, 140, 70);
    --orange-light: rgba(241, 165, 114, 0.733);
+   --creamy:rgb(231 213 181);
 
    /* measures */
    --border-stat1: 1px solid var(--white-Opp);
