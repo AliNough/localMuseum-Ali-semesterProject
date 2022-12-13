@@ -33,11 +33,6 @@
   /* background-color: aqua; */
 }
 
-@media screen and (min-width: 600px) {
-   .hamburger-menu-container{
-    display: none;
-   }
-  
-}
+
 
 

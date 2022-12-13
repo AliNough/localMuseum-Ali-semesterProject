@@ -9,9 +9,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/Styling/homePageStyling.css">
         <script src="../toggle-element.js" defer></script>
-        <title>Local Museum | Exhibition Space</title>
+        <title>Home | Local Museum</title>
     </head>
-<body>
+<body class="home-page-body">
     <!--Header START -->
     <header class="header">
         <a href=""><img class="logoImage" src="/images/Meuseum-logo-transparent.png" alt="Museum Logo"></a>
@@ -21,9 +21,10 @@
             <label  for="js-toggle-button"><img class="hamburgerButton" src="/Icons/hamburger.png" alt="hamburgerMenuButton"></label>
             <section id="js-menu" class="menu">
                 <div class="menu-container">
-                    <a href="">Get in touch</a>
-                    <a href="">Get in touch</a>
-                    <a href="">Get in touch</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/visitPage.html">Visit</a>
+                    <a href="/ExhibitionSpace/exhibitionSpaceMainPage.html">Exhibition Spaces</a>
+                    <a href="">Explore</a>
                     <a href="">Get in touch</a>
                 </div>
             </section>
@@ -35,44 +36,47 @@
         <div class="page-description-container">
             <h3>Welcome to</h3>
             <h2>Community Science Museum</h2>
-            <p>Come join us at the Community Science Museum where we're committed to making science accessible to all. </p>
         </div>
     </section>
     <!-- main title END -->
-    
     <div class="home-page-main-container">
-        <!-- exhibitoion spaces navigation box START -->
-        <div class="exibition-spaces-nav-container">
-            <div class="exhibit-spaces-grp-1">
-                <div class="exibit-container-grpd grp-A page-is-selected">
-                    <a href="/ExhibitionSpace/biologyMedicinePage.html"><img src="/images/samuel-zeller-113381.jpg" class="exibit-buttons-grpd biology-medicin-container" alt="a manaquin displaying the human body and its organs"></a>
-                    <p>Biology & Medicine</p>
+        <div class="home-page-content-containe r">
+            <a href="/explorePage.html" class="content-grp">
+                <div class="content-heading">
+                    <h3 class="content-heading-title">Explore</h3>
+                    <img class="right-chev" src="/Icons/right-chevron.png" alt="chevron pointing righ">
                 </div>
-                <div class="exibit-container-grpd grp-B">
-                    <a href="/ExhibitionSpace/cosmologyPage.html"><img src="/images/andrew-ruiz-348421.jpg" class="exibit-buttons-grpd cosmology-container" alt="an astronaut in space suit"></a>
-                    <p>Cosmology</p>
+                <p class="content-copy">Come join us at the Community Science Museum where we're committed to making science accessible to all. </p>
+            </a>
+            <a href="/ExhibitionSpace/exhibitionSpaceMainPage.html" class="content-grp">
+                <div class="content-heading">
+                    <h3 class="content-heading-title">Exhibition spaces</h3>
+                    <img class="right-chev" src="/Icons/right-chevron.png" alt="chevron pointing righ">
                 </div>
-            </div>
-            <div class="exhibit-spaces-grp-2">
-                <div class="exibit-container-grpd grp-A">
-                    <a href="/ExhibitionSpace/evolutionPage.html"><img src="/images/william-bout-264826.jpg" class="exibit-buttons-grpd evolution-containe" alt="a spider webb of needle thin metals connected on each end"></a>
-                    <p>Evolution</p>
+                <p class="content-copy">Explore our five exciting exhibition spaces and learn more about our strange beautiful world</p>
+            </a>
+            <a href="/visitPage.html" class="content-grp home-page-visit-CTA">
+                <div class="content-heading ">
+                    <h3 class="content-heading-title">Come for a visit!</h3>
+                    <img class="right-chev" src="/Icons/right-chevron.png" alt="chevron pointing righ">
                 </div>
-                <div class="exibit-container-grpd grp-B">
-                    <a href="/ExhibitionSpace/aiAndRoboticsPage.html"><img src="/images/samuel-zeller-158996.jpg" class="exibit-buttons-grpd robot-ai-container" alt="child with v.r headset"></a>
-                    <p>A.I. & Robotics </p>
-                </div>
-            </div>
-            <div class="exhibit-spaces-grp-3">
-                <div class="exibit-container-grpd  grp-A ">
-                    <a href="/ExhibitionSpace/ecologyPage.html"><img class="exibit-buttons-grpd ecology-container" src="/images/aaron-blanco-tejedor-G9p6QyCQfCc-unsplash.jpg" alt=""></img></a>
-                    <p>Ecology</p>
-                </div>
+                <!-- <p class="content-copy">Come join us at the Community Science Museum where we're committed to making science accessible to all. </p> -->
+            </a>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="buttom-content-main">
+            <div class="buttom-content-x">
+                <a href="" class="buttom-content-GRP footer-button-3">Legal</a>
+                <a href="" class="buttom-content-GRP footer-button-2">Contact us</a>
+                <a href="" class="buttom-content-GRP footer-button-4">About Us</a>
             </div>
         </div>
-        <!-- exhibitoion spaces navigation box END -->
-
-    </div>
-    
+        <div class="go-to-top-container">
+            <label for="goToTopButton"><img class="GTT-arrow" src="/Icons/arrowhead-up.png" alt="go-to-top-arrow"></label>
+            <input type="button" onclick="goToTopFunction()" id="goToTopButton" class="GTT-button" title="Go to top" value="Go to Top">
+        </div>
+    </footer>
 </body>
 </html>

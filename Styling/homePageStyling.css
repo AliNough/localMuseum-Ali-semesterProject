@@ -1,19 +1,22 @@
 @import url(/Styling/Common/assembled.css);
 /* @import url(/Styling/exhibitSpaceMainPageStyling.css); */
 
-
-
-.main{
+.home-page-body{
+    overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
-
-
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
     
+}
+
+.home-page-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .page-description-section{
     display: flex;
@@ -23,7 +26,11 @@
 }
 
 .page-description-container{
+    display: flex;
+    flex-direction: column;
+
     margin: 0px 20px;
+
 }
 .page-description-container h3{
     margin-bottom: 5px;
@@ -34,29 +41,110 @@
     margin-top: 5px;
 }
 
-.backButton-input{
-    display: none;
+.home-page-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    
+    width: 100vw;
+}
+.home-page-content-container p {
+    color: var(--black);
 }
 
-.backButton{
-    max-width: 50px;
-    max-height: 50px;
-    cursor: pointer;
-    filter: invert(100%);
+/* content START */
+.content-grp{
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+
+    width: 88vw;
+    color: var(--black);
+    background-color: var(--white);
+    height: auto;
+    position: relative;
+    
+    margin: 5px 0px 5px 0px;
+    padding: 0px 15px 10px 15px;
+    border-radius: 20px;
+    
+}
+.content-grp::before{
+    content: " ";
+    
+    background-image: url(/images/mavis-cw-164128.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -145px;
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 20%;
+    
+    border-radius: 20px;
+    
+}
+.content-grp:hover{
+    box-shadow: inset 0px 0px 10px 5px var(--black);
+}
+.content-heading{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.content-heading-title{
+    margin: 0;
+}
+.right-chev{
+    height: 20px;
+    width: 20px;
+    
+}
+.content-copy{
+    position: relative;
+    margin: 0;
+    margin-top: 5px;
+
 }
 
+.content-image{
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 20%;
+    
+    margin: 5px 0px 5px 0px;
+    /* padding: 0px 15px 0px 15px; */
+}
+/* content END */
+
+.home-page-visit-CTA{
+    background-color: var(--orange-root);
+}
 
 /* exhibition spaces nav section start */
 .exibition-spaces-nav-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     background-color: var(--white);
+
+    
     width: 100%;
+
     justify-content: center;
     column-gap: 20px;
     
     padding-top: 20px;
+    padding-left: 40px;
+
+    overflow-x: hidden;
 }
 .exibit-container-grpd{
     display: flex;
@@ -75,10 +163,18 @@
     background-repeat: no-repeat;
     object-fit: cover;
 }
-.exibit-buttons-grpd:hover{
+
+
+.exibit-container-grpd:hover{
+    transform: scale(1.25);
+    /* align-self: flex-end; */
     position: relative;
     z-index: 600;
-    transform: scale(1.25);
+    cursor: pointer;
+    
+}
+.exibit-button-grpd:hover{
+    
     box-shadow: inset 0px 0px 25px 0px black;
 }
 
@@ -88,16 +184,17 @@
     display: flex;
     padding: 0px;
     margin-top: 10px;
-    font-size: .8rem;
+    /* width: 80px; */
+    font-size: 0.9rem;
+    font-weight: 400;
     flex-wrap: wrap;
+    
 }
-/* exhibition spaces nav section END */
-
-
 .exhibit-spaces-grp-1 , .exhibit-spaces-grp-2, .exhibit-spaces-grp-3{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    /* width: 90vw; */
+    overflow: visible;
 }
 .exhibit-spaces-grp-2{
     position: relative;
@@ -111,17 +208,26 @@
 
 .grp-A{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     position: relative;
-    right: 75px;
+    /* right: 95px; */
 
 }
 .grp-B{
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 93px;
+    /* right: 48px; */
+    left: 40px;
     bottom: 24px;
     min-width: 100%;
     /* justify-content: center; */
+}
+/* exhibition spaces nav section END */
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 1250px) {
+    
 }

@@ -1,50 +1,51 @@
 .menu {
+    flex-direction: column;
+
     z-index: 100;
     position: fixed;
     top: 96px;
-    left: 28vw;
+    left: 0vw;
     
-    background-color: rgba(124, 66, 66, 0.799);
+    background-color: rgba(62, 62, 62, 0.205);
+    backdrop-filter: blur(10px);
     
-    width: 70vw;
+    width: 100vw;
     height: 300px;
 
-    border-radius: 5px 25px 5px 5px;
+    border-radius: 25px 25px 5px 5px;
     display: none;
-  }
-
-  .is-visible {
+}
+.is-visible {
     display: flex;
+}
+.hamburgerToggle{
+   display: none;
+}
+.hamburgerButton{
+  max-width: 50px;
+  padding-right: 20px;
+}
+.menu-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 5px;
+}
+.menu-container a{
+  font-size: 1.2rem;
+  color: rgb(234, 241, 248);
+  background-color: rgba(34, 32, 32, 0.513);
+  
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 5px 35vw 5px 20px;
+}
+@media screen and (min-width: 600px) {
+  .hamburger-menu-container{
+   display: none;
   }
 
-  .hamburgerToggle{
-    display: none;
-  }
-
-
-  .hamburgerButton{
-    max-width: 50px;
-    padding-right: 20px;
-  }
-
-  .menu-container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    gap: 5px;
-  }
-
-  .menu-container a{
-    font-size: 1.2rem;
-    color: rgb(234, 241, 248);
-    background-color: rgba(33, 33, 33, 0.513);
-    
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 20px;
-    margin-left: 4px;
-    
-
-    padding: 5px 35vw 5px 20px;
-
-  }
+ }
