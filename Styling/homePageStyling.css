@@ -226,8 +226,13 @@
 /* exhibition spaces nav section END */
 
 @media screen and (min-width: 600px) {
+    .content-grp{
+        width: 70vw;
+    }
 }
 
 @media screen and (min-width: 1250px) {
-    
+    .content-grp{
+        max-width: 903px;
+    }
 }

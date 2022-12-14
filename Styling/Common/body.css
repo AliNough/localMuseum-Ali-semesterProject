@@ -2,19 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Solway:wght@300;400;500;700;800&display=swap');
 
 *{
-    font-family: 'Solway', serif;
-    /* overflow-x: hidden; */
-
+    font-family: 'Solway', 'Roboto', serif;
+    
 }
+
 
 body{
     
     background-color: var(--black);
     padding: 0;
     margin: 0;
-    font-family: roboto;
-
 }
 
 
+
+/*      back button START        */
+.backButton-input{
+    display: none;
+}
+
+.backButton{
+    max-width: 50px;
+    max-height: 50px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+/*      back button END         */
 

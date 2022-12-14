@@ -13,12 +13,13 @@
     position: relative;
 
     width: 88vw;
+
     color: var(--black);
     background-color: var(--white);
 
     height: auto;
     margin: 5px 0px 5px 0px;
-    padding: 0px 15px 10px 15px;
+    padding: 0px 15px 20px 15px;
     border-radius: 20px;
     
     overflow: hidden;
@@ -47,7 +48,8 @@
 .visit-page-content-heading{
     display: flex;
     align-items: center;
-    margin-top: 8px;
+    margin-top: 15px;
+    /* margin-left: 10px; */
 }
 .visit-page-content-heading-title{
     margin: 0;
@@ -64,9 +66,12 @@
 
 }
 
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
 
-
-/* office hours START */
+/*      office hours START      */
 .office-hours-container{
     display: flex;
     justify-content: space-between;
@@ -82,6 +87,8 @@
 
     border-right: 2px solid var(--orange-root);
     border-left: 2px solid var(--orange-root);
+
+    margin-top: 10px;
 
     
 }
@@ -116,4 +123,18 @@ hr{
 
     margin: 5px 0px 5px 0px;
     /* padding: 0px 15px 0px 15px; */
+}
+
+@media screen and (min-width: 600px) {
+    .visit-page-content-grp{
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .office-hours-container{
+        justify-content: space-evenly;
+        border-left: 0px;
+        border-right: 0px;
+    }
 }

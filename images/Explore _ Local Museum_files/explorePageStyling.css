@@ -68,13 +68,6 @@
     border-radius: 20px;
     
 }
-
-.explore-page-content-copy-container{
-    display: flex;
-    flex-direction: column;
-}
-
-
 /*  title of a box */
 .explore-page-content-heading{
     display: flex;
@@ -84,8 +77,6 @@
 .explore-page-content-heading-title{
     margin: 0;
 }
-
-
 /*   backgroung img of a box    */
 .explore-page-content-grp::before{
     content: " ";
@@ -103,7 +94,6 @@
     opacity: 10%;
     
     border-radius: 20px;
-
     
 }
 
@@ -119,8 +109,6 @@
 
 }
 
-
-
 /*             image styling             */
 .explore-page-content-image{
     width: 100%;
@@ -130,7 +118,7 @@
     margin: 20px 0px 5px 0px;
     position: relative;
     
-    object-fit: cover;
+    object-fit: contain;
 }
 
 hr{
@@ -158,44 +146,32 @@ hr{
 /*      content END          */
 
 
-/*          toggle buttons. box drops down when clicked      START*/
-
-.toggle-label{
-    cursor: pointer;
-}
+/* toggle buttons. box drops down when clicked      START*/
 
 .toggle-container{
     position: relative;
-    cursor: pointer;
 }
-
-/*      for kids        */
-.kids-section{
-    display: flex;
-    flex-direction: column;
-    height: 0px;
-    overflow: hidden;
-    
-    transition: height 0.5s ease-in;
-    position: relative;
-}
-.kids-section-toggle{
+ .kids-section{
     display: none;
-
+    transition: all 2s;
+ }
+.kids-section-toggle{
+    position: relative;
+    display: none;
 }
 .kids-section-toggle:checked ~ .kids-section{
-    height: max-content;
+    display: flex;
+    flex-direction: column;
  }
 
  .kids-section-label{
     position: relative;
  }
 
-/*      for teachers         */
+
  .teachers-section{
     display: none;
     align-items: center;
-    flex-direction: column;
  }
 .teachers-section-toggle{
     position: relative;
@@ -203,17 +179,17 @@ hr{
 }
 .teachers-section-toggle:checked ~ .teachers-section{
     display: flex;
+    flex-direction: column;
  }
  .teachers-section-label{
     position: relative;
  }
 
 
-/*      for researchers      */
+
  .researchers-section{
     display: none;
     align-items: center;
-    flex-direction: column;
  }
 .researchers-section-toggle{
     position: relative;
@@ -221,29 +197,9 @@ hr{
 }
 .researchers-section-toggle:checked ~ .researchers-section{
     display: flex;
+    flex-direction: column;
  }
  .researchers-section-label{
     position: relative;
  }
 /* toggle buttons. box drops down when clicked      END*/
-
-
-@media screen and (min-width: 600px) {
-    .explore-page-content-grp{
-        width: 79vw;
-    }
-}
-
-@media screen and (min-width: 1250px) {
-    .kids-section, .teachers-section, .researchers-section{
-        flex-direction: row;
-    }
-    .explore-page-content-image{
-        width: 300px;
-        height: 200px;
-        margin-right: 40px;
-    }
-    .explore-page-content-grp{
-        max-width: 1250px;
-    }
-}
