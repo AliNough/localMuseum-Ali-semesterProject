@@ -1,32 +1,5 @@
 @import url(/Styling/Common/assembled.css);
 
-/*      main title START        */
-.explore-page-description-section{
-    display: flex;
-    align-items: center;
-    align-self: flex-start;
-
-    color: var(--white);
-    margin-top: 10px;
-    margin-bottom: 10px;
-} 
-
-.explore-page-description-container{
-    display: flex;
-    flex-direction: column;
-
-    margin: 0px 20px;
-
-}
-.explore-page-description-container h3{
-    margin-bottom: 5px;
-    font-weight: 100;
-}
-
-.explore-page-description-container h2{
-    margin-top: 5px;
-} 
-/*      main title END          */
 
 
 
@@ -49,6 +22,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    row-gap: 10px;
 }
 
 .explore-page-content-grp{
@@ -63,11 +38,18 @@
     height: auto;
     position: relative;
     
-    margin: 5px 0px 5px 0px;
-    padding: 0px 15px 15px 15px;
+
     border-radius: 20px;
+
     
 }
+
+
+
+
+
+
+
 
 .explore-page-content-copy-container{
     display: flex;
@@ -104,13 +86,15 @@
     
     border-radius: 20px;
 
-    
 }
 
 .right-chev{
     height: 20px;
     width: 20px;
     
+}
+.section-toggle:checked ~ .right-chev{
+    background-color: aqua;
 }
 .explore-page-content-copy{
     position: relative;
@@ -167,7 +151,26 @@ hr{
 .toggle-container{
     position: relative;
     cursor: pointer;
+
+    margin: 5px 5px 5px 5px;
+    border-radius: 20px;
+    padding: 0px 15px 15px 15px;
+
+    transition: box-shadow .2s;
 }
+.toggle-container:hover {
+    /* background-color: rgba(112, 115, 115, 0.349); */
+    box-shadow:  0px 0px 10px 2px var(--black);
+   
+}
+.section-toggle:checked ~
+.kids-section,
+.teachers-section,
+.researchers-section{
+    display: flex;
+    height: max-content;
+    padding: 0px 15px 15px 15px;
+ }
 
 /*      for kids        */
 .kids-section{
@@ -179,17 +182,14 @@ hr{
     transition: height 0.5s ease-in;
     position: relative;
 }
-.kids-section-toggle{
+.section-toggle{
     display: none;
 
 }
-.kids-section-toggle:checked ~ .kids-section{
-    height: max-content;
- }
-
  .kids-section-label{
     position: relative;
  }
+
 
 /*      for teachers         */
  .teachers-section{
@@ -201,7 +201,7 @@ hr{
     position: relative;
     display: none;
 }
-.teachers-section-toggle:checked ~ .teachers-section{
+.section-toggle:checked ~ .teachers-section{
     display: flex;
  }
  .teachers-section-label{
@@ -219,7 +219,7 @@ hr{
     position: relative;
     display: none;
 }
-.researchers-section-toggle:checked ~ .researchers-section{
+.section-toggle:checked ~ .researchers-section{
     display: flex;
  }
  .researchers-section-label{
@@ -236,7 +236,7 @@ hr{
 
 @media screen and (min-width: 1250px) {
     .kids-section, .teachers-section, .researchers-section{
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
     .explore-page-content-image{
         width: 300px;

@@ -13,9 +13,13 @@
     
     height: 100%;
     width: 100vw;
-    position: relative;
 
+    margin-top: 10px;
+    position: relative;
+    z-index: 0;
     overflow: hidden;
+
+    box-shadow: 0px -10px 17px -10px var(--white);
 }
 
 .GTT-button{
@@ -32,7 +36,7 @@
 }
 
 .go-to-top-container{
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     
@@ -87,9 +91,12 @@
     
 }
 
+@media screen and (min-width: 600px) {
+   
+    .go-to-top-container{
+        display: none;
+    }
+}
 
 @media screen and (min-width: 1250px) {
-    .go-to-top-container{
-        display: flex;
-    }
 }

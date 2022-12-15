@@ -18,7 +18,9 @@
     flex-direction: column;
     align-items: center;
 }
-.page-description-section{
+
+         /* main title        END       */
+/* .page-description-section{
     display: flex;
     align-items: center;
     
@@ -39,7 +41,8 @@
 
 .page-description-container h2{
     margin-top: 5px;
-}
+} */
+/*          main title        END       */
 
 .home-page-content-container{
     display: flex;
@@ -54,7 +57,7 @@
     color: var(--black);
 }
 
-/* content START */
+/*              content     START             */
 .content-grp{
     display: flex;
     flex-direction: column;
@@ -71,7 +74,10 @@
     padding: 0px 15px 10px 15px;
     border-radius: 20px;
     
+    transition: box-shadow .2s;
 }
+
+/* backround image */
 .content-grp::before{
     content: " ";
     
@@ -122,108 +128,12 @@
     margin: 5px 0px 5px 0px;
     /* padding: 0px 15px 0px 15px; */
 }
-/* content END */
-
 .home-page-visit-CTA{
     background-color: var(--orange-root);
 }
-
-/* exhibition spaces nav section start */
-.exibition-spaces-nav-container{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    background-color: var(--white);
-
-    
-    width: 100%;
-
-    justify-content: center;
-    column-gap: 20px;
-    
-    padding-top: 20px;
-    padding-left: 40px;
-
-    overflow-x: hidden;
-}
-.exibit-container-grpd{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-}
-
-.exibit-buttons-grpd{
-    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-    
-    z-index: 10;
-    height: 90px;
-    width: 90px;
-    background-color: rgb(71, 202, 202);
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
+/*              content     END             */
 
 
-.exibit-container-grpd:hover{
-    transform: scale(1.25);
-    /* align-self: flex-end; */
-    position: relative;
-    z-index: 600;
-    cursor: pointer;
-    
-}
-.exibit-button-grpd:hover{
-    
-    box-shadow: inset 0px 0px 25px 0px black;
-}
-
-
-
-.exibit-container-grpd p{
-    display: flex;
-    padding: 0px;
-    margin-top: 10px;
-    /* width: 80px; */
-    font-size: 0.9rem;
-    font-weight: 400;
-    flex-wrap: wrap;
-    
-}
-.exhibit-spaces-grp-1 , .exhibit-spaces-grp-2, .exhibit-spaces-grp-3{
-    display: flex;
-    flex-direction: column;
-    /* width: 90vw; */
-    overflow: visible;
-}
-.exhibit-spaces-grp-2{
-    position: relative;
-    bottom: 49px;
-}
-
-.exhibit-spaces-grp-3{
-    position: relative;
-    bottom: 98px;
-}
-
-.grp-A{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    /* right: 95px; */
-
-}
-.grp-B{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    /* right: 48px; */
-    left: 40px;
-    bottom: 24px;
-    min-width: 100%;
-    /* justify-content: center; */
-}
-/* exhibition spaces nav section END */
 
 @media screen and (min-width: 600px) {
     .content-grp{

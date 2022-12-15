@@ -27,10 +27,50 @@
     max-width: 90px;
 }
 
-
-.hamburger-menu-container{
+/*       hamburger menu styling has its own CSS file      */
+/* .hamburger-menu-container{
   float: right;
-  /* background-color: aqua; */
+} */
+
+
+.header-nav-container{
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-end;
+  column-gap: 10px;
+
+  margin-left: 10px;
+}
+.header-nav-links{
+  display: none;
+  text-decoration: none;
+
+  background-color: rgba(243, 237, 221, 0.925);
+  color: var(--black);
+
+  margin-bottom: 5px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+
+  border-radius: 10px 10px 0px 0px;
+
+  transition: background-color .3s;
+}
+.header-nav-not-selected:hover{
+  background-color: rgba(248, 248, 218, 0.925);
+}
+.header-nav-is-selected {
+  background-color: rgba(251, 175, 105, 0.925);
+}
+
+@media screen and (min-width: 600px) {
+  .header-nav-links{
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+ 
 }
 
 
