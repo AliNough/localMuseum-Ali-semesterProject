@@ -34,7 +34,7 @@
 .visit-page-content-grp::before{
     content: " ";
     
-    background-image: url(/images/vecteezy_colorful-leaf-pattern-isolated-on-yellow-background_7229039_92.jpg);
+    background-image: url(/images/vecteezy_abstract-small-rounded-hexagon-line-geometric-overlapping_6836830.jpg);
     background-size: cover;
     /* background-repeat: no-repeat; */
     background-position: 0px -145px;
@@ -49,9 +49,17 @@
     border-radius: 20px;
     
 }
-/* .visit-page-content-grp:hover{
-    box-shadow: inset 0px 0px 10px 5px var(--black);
-} */
+
+.info-grp-1 , .info-grp-2{
+    /* background-color: var(--white); */
+    background-color: var(--green-shadow-light);
+    
+    padding: 14px 14px;
+    margin-top: 10px;
+
+    border-radius: 10px;
+}
+
 .visit-page-content-heading{
     display: flex;
     align-items: center;
@@ -77,6 +85,28 @@
     display: flex;
     flex-direction: column;
 }
+
+.contact-CTA{
+    position: relative;
+    text-decoration: none;
+    align-self: center;
+
+    color: var(--white);
+    background-color: var(--green-root);
+
+    font-size: 1rem;
+
+    margin-top: 10px;
+    padding: 10px 30px;
+
+    border-radius: 20px;
+
+    
+    color: var(--white);
+    background-color: var(--green-root);
+}
+
+
 
 /*      office hours             START      */
 .office-hours-container{
@@ -117,8 +147,8 @@
 /* office hours END */
 
 hr{
-    margin-block-start: 5px;
-    margin-block-end: 0px;
+    margin-block-start: 8px;
+    margin-block-end: 8px;
     width: 20px;
 }
 
@@ -135,6 +165,8 @@ hr{
 @media screen and (min-width: 600px) {
     .visit-page-content-grp{
         width: 70vw;
+        row-gap: 8px;
+        padding: 30px 42px 50px 42px;
     }
 }
 

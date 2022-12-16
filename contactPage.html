@@ -30,12 +30,18 @@
                     <a href="/visitPage.html">Visit</a>
                     <a href="/ExhibitionSpace/exhibitionSpaceMainPage.html">Exhibition Spaces</a>
                     <a href="/explorePage.html">Explore</a>
-                    <a href="/visitPage.html">Get in touch</a>
+                    <a href="/contactPage.html">Get in touch</a>
                 </div>
             </section>
         </div>
     </header>
     <!-- Header END -->
+    <section class="page-description-section">
+        <div class="page-description-container">
+            <a href="/index.html"><img class="backButton" src="/Icons/back.png" alt="back-button"></a>
+            <h2>Contact</h2>
+        </div>
+    </section>
     <div class="contact-container">
         
         
@@ -85,12 +91,13 @@
                 <form class="contact-form-section" action="">
                     <div class="personal-info-container name-form-container">
                         <input type="text" id="fname" name="fname" class="first-name form-grp" placeholder="First name" required>
-                        <input type="text" id="lname" name="lname" class="last-name form-grp" placeholder="Last name">
+                        <input type="text" id="lname" name="lname" class="last-name form-grp" placeholder="Last name" required>
                     </div>
                     <div class="personal-info-container">
-                        <input type="number" id="phoneNumber" name="phoneNumber" class="phone-number form-grp" placeholder="Phone number">
-                        <input type="email" id="email" name="email" class="email form-grp" placeholder="E-mail">
-                        <textarea name="textBox" id="textBox" cols="30" rows="5" class="text-box form-grp" placeholder="Type your message here"></textarea>
+                        <input type="number" id="phoneNumber" name="phoneNumber" class="phone-number form-grp" placeholder="Phone number" required>
+                        <input type="email" id="email" name="email" class="email form-grp" placeholder="E-mail" required>
+                        <textarea name="textBox" id="textBox" cols="30" rows="5" class="text-box form-grp" placeholder="Type your message here" required></textarea>
+                        <input type="submit" name="submiButton" class="form-submit-button" value="Send">
                     </div>
                     
                 </form>
