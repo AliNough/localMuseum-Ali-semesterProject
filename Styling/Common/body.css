@@ -52,6 +52,17 @@ margin: 0px 0px 10px 0px;
     max-height: 50px;
     cursor: pointer;
     filter: invert(100%);
+
+    transition: transform.2s ease-out, scale .2s ease-out , width .2s ease-out;
+}
+.backButton:hover{
+    transform: translateX(-20px) scale(1.2);
+
+    
+}
+.backButton:hover ~ .page-description-container{
+    margin-left: 20px;
+    background-color: rgb(3, 91, 62);
 }
 /*      back button END         */
 
@@ -67,3 +78,4 @@ margin: 0px 0px 10px 0px;
         padding-left: 16vw;
     }
 }
+

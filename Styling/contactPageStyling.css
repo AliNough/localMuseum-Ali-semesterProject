@@ -1,19 +1,61 @@
 @import url(/Styling/Common/assembled.css);
 
-.visit-page-main-container{
+.contact-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-
-.page-description-container{
-    flex-direction: row;
-    align-items: center;
+.right-chev{
+    height: 20px;
+    width: 20px;
+    
 }
 
-.visit-page-content-grp{
+/*          Contact form            START           */
+.contact-form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.personal-info-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    margin-top: 20px;
+
+    width: 100%;
+
+}
+.form-grp{
+    display: flex;
+    position: relative;
+
+    padding: 15px 0px 15px 20px;
+    border: 1px solid var(--green-root);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+
+    color: var(--black);
+    background-color: var(--green-shadow-light);
+}
+.text-box{
+    width: 90%;
+    max-width: 800px;
+}
+
+/*          Contact form            END             */
+
+/*           Contact page conten      START        */
+.contact-page-content-grp{
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -31,7 +73,7 @@
     
     overflow: hidden;
 }
-.visit-page-content-grp::before{
+.contact-page-content-grp::before{
     content: " ";
     
     background-image: url(/images/vecteezy_colorful-leaf-pattern-isolated-on-yellow-background_7229039_92.jpg);
@@ -49,16 +91,14 @@
     border-radius: 20px;
     
 }
-/* .visit-page-content-grp:hover{
-    box-shadow: inset 0px 0px 10px 5px var(--black);
-} */
-.visit-page-content-heading{
+
+.contact-page-content-heading{
     display: flex;
     align-items: center;
     margin-top: 15px;
     /* margin-left: 10px; */
 }
-.visit-page-content-heading-title{
+.contact-page-content-heading-title{
     margin: 0;
 }
 .right-chev{
@@ -66,19 +106,17 @@
     width: 20px;
     
 }
-.visit-page-content-copy{
+.contact-page-content-copy{
     position: relative;
     margin: 0;
     margin-top: 10px;
 
 }
 
-.contact-container{
-    display: flex;
-    flex-direction: column;
-}
+/*           Contact page conten      END        */
 
 /*      office hours             START      */
+
 .office-hours-container{
     display: flex;
     justify-content: space-between;
@@ -103,7 +141,7 @@
 .weekday-grp{
     background-color: azure;
     height: 93%;
-    border: 2px solid rgb(228, 195, 195);
+    border: 2px solid var(--orange-lighter);
     border-radius: 10px;
     padding: 0px 12px;
 }
@@ -114,28 +152,23 @@
 .weekday-grp h3{
     font-size: 1rem;
 }
+
 /* office hours END */
 
-hr{
-    margin-block-start: 5px;
-    margin-block-end: 0px;
-    width: 20px;
-}
-
-.content-image{
-    width: 200px;
-    height: 200px;
-
-    border-radius: 20%;
-
-    margin: 5px 0px 5px 0px;
-    /* padding: 0px 15px 0px 15px; */
-}
-
 @media screen and (min-width: 600px) {
-    .visit-page-content-grp{
-        width: 70vw;
+    .name-form-container{
+        display: flex;
+        flex-direction: row;
+
+        width: 622px;
+        max-width: 100%;
+        column-gap: 20px;
     }
+    .form-grp{
+        font-size: 1.1rem;
+    }
+    
+   
 }
 
 @media screen and (min-width: 1250px) {
@@ -143,5 +176,19 @@ hr{
         justify-content: space-evenly;
         border-left: 0px;
         border-right: 0px;
+    }
+
+    .contact-info-form-grpd{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 88vw;
+        column-gap: 20px;
+    }
+    .contact-info-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        max-width: 300px;
+
     }
 }
