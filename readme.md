@@ -1,10 +1,14 @@
 
+Semester project - FED 22
+    by Ali Najimedini
+
+
 Design:     
-https://www.figma.com/file/qlF8FOhvs9abM0xQ6D3gg5/Local-Museum-semester-project?node-id=8%3A399&t=qr2wmFOdx9fNtrnl-1
+    https://www.figma.com/file/qlF8FOhvs9abM0xQ6D3gg5/Local-Museum-semester-project?node-id=8%3A399&t=qr2wmFOdx9fNtrnl-1
 
 
 Live link:  
-https://bucolic-malabi-083660.netlify.app/
+    https://bucolic-malabi-083660.netlify.app/
 
 Instruction:
     This is my semester project report, where I will be explaining my code and decisions in best way i can.
