@@ -16,7 +16,7 @@ Instruction:
     The project is design and development of a website for a museum named "Local Science Museum". LSM for short.
 
 
-Body:
+Main :
     Although I enjoy design quit a bit, I'm not particularly good at it, it's a fun and very necessary part of website development. Unfortunatly, my experience is very limited in this area so this was a challange.
     I did not use alot of time in the design, is fear of not being able to finish the code in time. I used less than 1 week of my 4 for the design and i only focused on lo-fi wireframe. I only used it for bouncing ideas of the wall and see if i could solve a structural problem like where to put navigation box.
 
@@ -28,7 +28,15 @@ Body:
     Though if you're a kid do you really want to read how long the museum has been there? Or a long welcome paragraph? I would prefere to get to the page I'm looking for as soon as possible, but that's just me though.
 
 
-structure:
+Known issues:
+    - In "explore page", content dropdowns actual toggle area does not match the visible box.
+    - "back button" does not take you back, but to a previously set path.
+
+To do:
+    - Fit rest of introduction paragraphs to appropriate pages.
+    - Add fitting animations to each "exhibition space" page.
+
+.css structure:
     Every page has their own css styling file except for the 5 exhibition spaces, they have one common styling file and the main exhibition space has it's own styling file and borrows some codes from the common file.
 
     All files inside folder "common" is responsible for specific parts of the website:
