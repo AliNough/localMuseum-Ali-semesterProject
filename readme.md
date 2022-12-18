@@ -34,7 +34,7 @@ structure:
     All files inside folder "common" is responsible for specific parts of the website:
 
     assembled:          Gathers all common css files in that folder to be used in individual styling files.
-    body:               Styling all repeated elements such as font, heading title, chevrons, ...
+    body:               Styling all repeated elements such as root codes, font, heading title, chevrons, ...
     footer:             Styling of footer section.
     hamburgerMenu:      Styling of everything within the hamburger menu.
     header:             Styling everything inside header. such as logo and main nav. 
