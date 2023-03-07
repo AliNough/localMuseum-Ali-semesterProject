@@ -35,6 +35,7 @@ Known issues:
 To do:
     - Fit rest of introduction paragraphs to appropriate pages.
     - Add fitting animations to each "exhibition space" page.
+    - Rethink the color of background (black) and backgound color harmony of all boxes.
 
 .css structure:
     Every page has their own css styling file except for the 5 exhibition spaces, they have one common styling file and the main exhibition space has it's own styling file and borrows some codes from the common file.
@@ -47,6 +48,7 @@ To do:
     hamburgerMenu:      Styling of everything within the hamburger menu.
     header:             Styling everything inside header. such as logo and main nav. 
     variables:          All repeated units and css codes such as color and measuring.
+
 
 
 Sources and resources:
